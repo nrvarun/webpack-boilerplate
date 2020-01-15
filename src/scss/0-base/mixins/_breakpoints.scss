@@ -1,0 +1,43 @@
+@mixin bp($size) {
+  @if $size == "phone" {
+    @media (min-width: $xs) {
+      @content;
+    }
+  }
+
+  @if $size == "phone-lg" {
+    @media (min-width: $sm) {
+      @content;
+    }
+  }
+
+  @if $size == "tab" {
+    @media (min-width: $tab) {
+      @content;
+    }
+  }
+
+  @if $size == "desktop" {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+
+  @if $size == "desktop-1200" {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+
+  @if $size == "desktop-lg" {
+    @media (min-width: $desktop-lg) {
+      @content;
+    }
+  }
+
+  @if $size == "hd" {
+    @media (min-width: $mxl) {
+      @content;
+    }
+  }
+}

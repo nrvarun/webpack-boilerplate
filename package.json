@@ -1,5 +1,5 @@
 {
-  "name": "ukyo",
+  "name": "varun",
   "version": "1.0.1",
   "description": "Webpack 4 - SCSS - PUG boilerplate",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "pug",
     "babel"
   ],
-  "author": "Giulio Collesei",
+  "author": "Varun N R",
   "license": "ISC",
   "browserslist": [
     "last 2 version",
@@ -40,9 +40,11 @@
     "eslint-plugin-compat": "3.2.0",
     "extract-loader": "3.1.0",
     "file-loader": "4.2.0",
+    "html-critical-webpack-plugin": "^2.1.0",
     "html-loader": "0.5.5",
     "html-webpack-harddisk-plugin": "1.0.1",
     "html-webpack-plugin": "3.2.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "ip": "1.1.5",
     "mini-css-extract-plugin": "0.8.0",
     "node-sass": "4.13.0",
@@ -64,6 +66,7 @@
     "stylelint-scss": "3.12.0",
     "uglifyjs-webpack-plugin": "2.2.0",
     "webpack": "4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "3.3.9",
     "webpack-dev-server": "3.9.0",
     "webpack-format-messages": "2.0.5",

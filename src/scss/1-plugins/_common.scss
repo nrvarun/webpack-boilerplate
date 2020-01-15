@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+dl,
+ol,
+p,
+ul {
+  margin: 0;
+}
+
+.is-disabled {
+  pointer-events: none;
+  cursor        : none;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+// main {
+//   overflow: hidden;
+// }
+
+.no-scroll {
+  overflow: hidden;
+}

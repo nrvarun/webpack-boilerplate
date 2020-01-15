@@ -1,8 +1,6 @@
-# Ukyo
+A frontend boilerplate that uses Webpack 4.
 
-Ukyo is a frontend boilerplate that uses Webpack 4.
-
-![Ukyo](https://preview.ibb.co/mDpt1e/ukyo_tools.jpg)
+![tools](https://preview.ibb.co/mDpt1e/ukyo_tools.jpg)
 
 - [x] Webpack 4
 - [x] Babel 7
