@@ -103,18 +103,18 @@ module.exports = {
           quality: "95-100"
         }
       })
-    ],
-    namedModules: true, // NamedModulesPlugin()
-    splitChunks: {
-      // CommonsChunkPlugin()
-      name: "vendor",
-      minChunks: 2,
-      maxInitialRequests: 20, // for HTTP2
-      maxAsyncRequests: 20, // for HTTP2
-      minSize: 40 // for example only: chosen to match 2 modules
-      // omit minSize in real use case to use the default of 30kb
-    },
-    noEmitOnErrors: true, // NoEmitOnErrorsPlugin
-    concatenateModules: true // ModuleConcatenationPlugin
+    ]
+    // namedModules: true, // NamedModulesPlugin()
+    // splitChunks: {
+    //   // CommonsChunkPlugin()
+    //   name: "vendor",
+    //   minChunks: 2,
+    //   maxInitialRequests: 20, // for HTTP2
+    //   maxAsyncRequests: 20, // for HTTP2
+    //   minSize: 40 // for example only: chosen to match 2 modules
+    //   // omit minSize in real use case to use the default of 30kb
+    // },
+    // noEmitOnErrors: true, // NoEmitOnErrorsPlugin
+    // concatenateModules: true // ModuleConcatenationPlugin
   }
 };

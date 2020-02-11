@@ -67,7 +67,7 @@ module.exports = merge(baseConfig, {
           dest: templateName.replace(".pug", ".html"),
           inline: true,
           minify: true,
-          extract: true,
+          extract: false,
           width: 375,
           height: 565,
           penthouse: {
