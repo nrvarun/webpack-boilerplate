@@ -1,6 +1,7 @@
 import "../scss/main.scss";
 
-import "@babel/polyfill";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 import "../pug/index.pug";
 import "../pug/about.pug";
