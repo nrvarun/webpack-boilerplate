@@ -20,7 +20,6 @@ srcll.forEach((s) => s.endsWith(".pug") && pugTemplates.push(s));
 
 module.exports = {
   entry: {
-    common: [path.join(paths.dirSrcJs, "common")],
     index: [path.join(paths.dirSrcJs, "index")],
   },
   output: {
@@ -129,11 +128,11 @@ module.exports = {
         /**
          * Common code chunk
          */
-        // commons: {
-        //   name: "commons",
-        //   chunks: "initial",
-        //   minChunks: 2,
-        // },
+        commons: {
+          name: "commons",
+          chunks: "initial",
+          minChunks: 2,
+        },
         default: {
           minChunks: 2,
           priority: -20,
