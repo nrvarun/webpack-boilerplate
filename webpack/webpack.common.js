@@ -8,6 +8,8 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const NpmInstallPlugin = require("npm-install-webpack-plugin");
+
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 
 const path = require("path");
@@ -101,6 +103,7 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
     }),
+    new NpmInstallPlugin(),
   ],
 
   optimization: {
