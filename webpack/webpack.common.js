@@ -41,7 +41,19 @@ module.exports = {
         enforce: "pre",
       },
       {
-        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+        test: /\.(eot|woff|woff2|svg|ttf|otf)([\?]?.*)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(gif)([\?]?.*)$/,
         use: ["url-loader"],
       },
       {
@@ -86,10 +98,10 @@ module.exports = {
       },
     ]),
     new webpack.HotModuleReplacementPlugin(),
-    // new webpack.ProvidePlugin({
-    //   $: "jquery",
-    //   jQuery: "jquery",
-    // }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
   ],
 
   optimization: {
