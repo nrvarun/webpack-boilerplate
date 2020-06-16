@@ -103,7 +103,7 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
     }),
-    new NpmInstallPlugin(),
+    // new NpmInstallPlugin(),
   ],
 
   optimization: {
